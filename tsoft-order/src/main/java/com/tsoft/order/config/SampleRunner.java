@@ -20,9 +20,9 @@ import java.util.concurrent.Executor;
  * @Date 2019/12/17
  * @Version V1.0
  **/
-public
+
 @Component
-class SampleRunner implements ApplicationRunner {
+public class SampleRunner implements ApplicationRunner {
 
     @Value("${user.name}")
     String userName;
