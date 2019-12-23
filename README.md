@@ -1,5 +1,5 @@
 # tsoft-parent 微服务基本架构搭建，实现集群化部署，服务高可用，开箱即用
-## springboot2.x+ springcloud2.x + springcloud-alibaba+nacos+ nginx
+## springboot2.x+ springcloud2.x + springcloud-alibaba+nacos+ nginx+ 
 
 ## 所用插件版本号
 
