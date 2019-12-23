@@ -25,6 +25,10 @@
         <spring-cloud-alibaba.version>2.1.1.RELEASE</spring-cloud-alibaba.version>
         <httpclient-version>4.5.10</httpclient-version>
         <httpcore-version>4.4.10</httpcore-version>
+        <mybatis-plus-version>3.2.0</mybatis-plus-version>
+        <mysql-version>8.0.18</mysql-version>
+
+
 
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -75,7 +79,27 @@
                 <version>${httpcore-version}</version>
             </dependency>
 
+          <!--lombok-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-version}</version>
+            </dependency>
+            <!-- MYSQL -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-version}</version>
+            </dependency>
+
         </dependencies>
+
+
 
     </dependencyManagement>
 

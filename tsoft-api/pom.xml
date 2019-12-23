@@ -12,6 +12,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>tsoft-api-order</module>
+        <module>tsoft-api-user</module>
     </modules>
 
 
