@@ -1,7 +1,6 @@
 package com.tsoft.user.feign;
 
-import com.tsoft.order.api.OrdOrder;
-import org.springframework.web.bind.annotation.PathVariable;
+import com.tsoft.order.entity.OrdOrder;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**

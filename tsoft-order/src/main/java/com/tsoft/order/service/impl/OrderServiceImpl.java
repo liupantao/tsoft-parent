@@ -1,6 +1,6 @@
 package com.tsoft.order.service.impl;
 
-import com.tsoft.order.api.OrdOrder;
+import com.tsoft.order.entity.OrdOrder;
 import com.tsoft.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;

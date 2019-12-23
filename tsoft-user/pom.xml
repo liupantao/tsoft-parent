@@ -12,12 +12,17 @@
     <artifactId>tsoft-user</artifactId>
 
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
     <dependencies>
 
         <!--依赖项目模块-->
         <dependency>
             <groupId>com.tsoft</groupId>
-            <artifactId>tsoft-order</artifactId>
+            <artifactId>tsoft-api-order</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
@@ -68,24 +73,34 @@
             <version>${httpcore-version}</version>
         </dependency>
 
+        <!--工具類-->
+        <dependency>
+            <groupId> cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.4.3</version>
+        </dependency>
     </dependencies>
 
 
+
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <version>${maven-deploy-plugin.version}</version>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-        </plugins>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+                <mainClass>com.tsoft.user.UserApp</mainClass>
+            </configuration>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>repackage</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+
+    </plugins>
     </build>
 
 

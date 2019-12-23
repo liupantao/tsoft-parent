@@ -13,6 +13,11 @@
 
     <artifactId>tsoft-web</artifactId>
 
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
     <dependencies>
         <!--spring-boot-->
         <dependency>
@@ -38,21 +43,26 @@
     </dependencies>
 
 
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <version>${maven-deploy-plugin.version}</version>
                 <configuration>
-                    <skip>true</skip>
+                    <mainClass>com.tsoft.web.WebApp</mainClass>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
+
         </plugins>
     </build>
+
 
 </project>

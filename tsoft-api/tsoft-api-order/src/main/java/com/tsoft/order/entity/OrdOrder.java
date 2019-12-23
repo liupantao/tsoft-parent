@@ -1,4 +1,4 @@
-package com.tsoft.order.api;
+package com.tsoft.order.entity;
 
 import java.io.Serializable;
 
