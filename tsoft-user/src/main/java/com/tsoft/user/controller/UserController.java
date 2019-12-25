@@ -41,7 +41,8 @@ public class UserController {
 
     @RequestMapping("/testMybatis")
     public String testMybatis(){
-        int count = ctUserService.count();
+      //  int count = ctUserService.count();
+        int count = 0;
         System.out.println(count);
         CtUser ct= new CtUser();
         ct.setUserName("张三");

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date 2019/12/17
  * @Version V1.0
  **/
-@RestController
+//@RestController
 public class UserServiceImpl implements  UserService {
 
     @Override
